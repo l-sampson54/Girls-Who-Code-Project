@@ -1,0 +1,26 @@
+@use '../abstracts'as *;
+
+.showcase {
+    padding-top: 14.5rem;
+
+    &__container {
+        text-align: center;
+    }
+
+    &__image {
+        display: inline-block;
+        transform: translateY(-3rem);
+    }
+
+    @include breakpoint(medium) {
+        &__image {
+            transform: translateY(-5rem);
+        }
+    }
+
+    @include breakpoint(large) {
+        &__image {
+            transform: translateY(-8rem);
+        }
+    }
+}

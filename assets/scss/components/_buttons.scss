@@ -1,0 +1,33 @@
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    transition: opacity .25s;
+
+    &:is(:hover, :focus) {
+        opacity: .8;
+    }
+
+    &--action {
+        font-size: 1.8rem;
+        color: var(--light-clr);
+        line-height: 0;
+    }
+
+    &--green {
+        background-color: var(--light-clr-2);
+        color: var(--dark-clr);
+    }
+
+    &--text {
+        font-family: var(--title-font);
+        letter-spacing: 1px;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+    }
+
+    &--transparent {
+        color: var(--light-clr-2);
+        border-bottom: 2px solid var(--light-clr-2);
+        padding: 0;
+    }
+}

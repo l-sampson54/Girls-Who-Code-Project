@@ -1,0 +1,28 @@
+.portfolio {
+    padding-top: 7.4rem;
+    padding-bottom: 12rem;
+
+    &__metadata {
+        padding-bottom: 4rem;
+        text-align: left;
+    }
+}
+
+.swiper {
+    width: 100%;
+
+    .swiper-slide {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: var(--light-clr-2);
+    }
+}

@@ -1,0 +1,43 @@
+@use '../abstracts'as *;
+
+.blog {
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+
+    &__container {
+        display: grid;
+    }
+
+    &__metadata-description {
+        margin-bottom: 4rem;
+    }
+
+    &__post:first-of-type {
+        margin-bottom: 6rem;
+    }
+
+    &__post-image {
+        margin-bottom: 3rem;
+        
+        & img{
+            margin-inline: auto;
+        }
+    }
+
+    &__post-title {
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+    }
+
+    @include breakpoint(medium) {
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            column-gap: 2.5rem;
+        }
+
+        &__post:first-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@use '../abstracts'as *;
+
+.footer {
+    background-color: var(--dark-clr);
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+
+    &__group {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__separator {
+        display: block;
+        height: 1px;
+        background-color: var(--light-clr);
+        margin-top: 10rem;
+        margin-bottom: 8rem;
+    }
+
+    &__logo {
+        display: inline-block;
+    }
+
+    &__description {
+        margin-block: 3rem;
+    }
+
+    &__list {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    &__list-link {
+        color: var(--light-clr-2);
+        font-size: 1.8rem;
+        border: 1px solid rgba(255, 255, 255, .1);
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color .25s;
+
+        &:is(:hover, :focus){
+            background-color: var(--light-clr-2);
+            color: var(--dark-clr);
+        }
+    }
+
+    &__copyright {
+        display: inline-block;
+        margin-top: 5rem;
+    }
+
+    @include breakpoint(medium) {
+        &__description {
+            max-width: 50rem;
+            margin-inline: auto;
+        }
+    }
+}

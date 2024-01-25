@@ -1,0 +1,24 @@
+@use '../abstracts'as *;
+
+.title {
+    font-family: var(--title-font);
+    color: var(--light-clr-3);
+    letter-spacing: 1px;
+    font-size: 3.6rem;
+
+    &--main {
+        font-size: clamp(4.2rem, 8vw, 10rem);
+        line-height: 1.2;
+        background: url('/assets/images/showcase_image_lg.png') center 37% no-repeat;
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        position: relative;
+        z-index: 10;
+
+        @include breakpoint(large) {
+            background-position: center 48%;
+        }
+    }
+}

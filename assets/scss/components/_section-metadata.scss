@@ -1,0 +1,19 @@
+@use '../abstracts'as *;
+
+.section-metadata {
+    padding-bottom: 6rem;
+    text-align: center;
+
+    &__description {
+        margin-top: 1.3rem;
+    }
+
+    @include breakpoint(medium) {
+        grid-column: 1/-1;
+
+        &__description {
+            max-width: 70rem;
+            margin-inline: auto;
+        }
+    }
+}
